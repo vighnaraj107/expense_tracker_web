@@ -11,7 +11,7 @@ pipeline {
 
         stage('Deploy to Nginx') {
             steps {
-                bat 'xcopy /E /Y * C:\\nginx\\html\\'
+                bat 'xcopy /E /Y expense C:\\nginx\\html\\expense\\'
             }
         }
     }
